@@ -63,82 +63,88 @@
     <!-- Dashboard Container -->
     <div class="flex min-h-screen">
         <!-- Sidebar Menu -->
-        <div class="sidebar bg-white w-64 shadow-md">
-            <!-- Logo and Title -->
-            <div class="p-6 border-b border-gray-200">
-                <div class="flex items-center">
-                    <div class="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center">
-                        <i class="fas fa-graduation-cap text-white"></i>
-                    </div>
-                    <h1 class="text-xl font-bold text-gray-800 ml-3">EduManage</h1>
-                </div>
-                <p class="text-sm text-gray-500 mt-2">Student Management System</p>
+       <!-- Sidebar Menu -->
+<div class="sidebar bg-white w-64 shadow-md flex flex-col">
+
+    <!-- Logo and Title -->
+    <div class="p-6 border-b border-gray-200">
+        <div class="flex items-center">
+            <div class="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center">
+                <i class="fas fa-graduation-cap text-white"></i>
             </div>
-            
-            <!-- User Profile -->
-            <div class="p-4 border-b border-gray-200 flex items-center">
-                <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
-                    <i class="fas fa-user text-blue-600"></i>
-                </div>
-                <div class="ml-3">
-                    <h3 class="font-medium text-gray-800">John Smith</h3>
-                    <p class="text-xs text-gray-500">Administrator</p>
-                </div>
-            </div>
-            
-            <!-- Navigation Menu -->
-            <div class="py-4">
-                <a href="#" class="sidebar-item active flex items-center py-3 px-6 text-gray-700">
-                    <i class="fas fa-tachometer-alt w-5 mr-3"></i>
-                    <span>Dashboard</span>
-                </a>
-                
-                <a href="{{ route('students.index') }}" class="sidebar-item flex items-center py-3 px-6 text-gray-700">
-                    <i class="fas fa-user-graduate w-5 mr-3"></i>
-                    <span>Students</span>
-                    <span class="ml-auto bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full">42</span>
-                </a>
-                
-                <a href="#" class="sidebar-item flex items-center py-3 px-6 text-gray-700">
-                    <i class="fas fa-chalkboard-teacher w-5 mr-3"></i>
-                    <span>Teachers</span>
-                    <span class="ml-auto bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full">12</span>
-                </a>
-                
-                <a href="#" class="sidebar-item flex items-center py-3 px-6 text-gray-700">
-                    <i class="fas fa-book w-5 mr-3"></i>
-                    <span>Courses</span>
-                </a>
-                
-                <a href="#" class="sidebar-item flex items-center py-3 px-6 text-gray-700">
-                    <i class="fas fa-calendar-alt w-5 mr-3"></i>
-                    <span>Schedule</span>
-                </a>
-                
-                <a href="#" class="sidebar-item flex items-center py-3 px-6 text-gray-700">
-                    <i class="fas fa-file-invoice-dollar w-5 mr-3"></i>
-                    <span>Finance</span>
-                </a>
-                
-                <a href="#" class="sidebar-item flex items-center py-3 px-6 text-gray-700">
-                    <i class="fas fa-chart-bar w-5 mr-3"></i>
-                    <span>Reports</span>
-                </a>
-                
-                <a href="#" class="sidebar-item flex items-center py-3 px-6 text-gray-700">
-                    <i class="fas fa-cog w-5 mr-3"></i>
-                    <span>Settings</span>
-                </a>
-            </div>
-            
-            <!-- Logout Button -->
-            <div class="absolute bottom-0 w-64 p-4 border-t border-gray-200">
-                <a href="/logout" class="flex items-center py-2 px-4 text-red-600 rounded-lg hover:bg-red-50 transition">
-                    <i class="fas fa-sign-out-alt w-5 mr-3"></i>
-                    <span>Logout</span>
-                </a>
-            </div>
+            <h1 class="text-xl font-bold text-gray-700 ml-3">Asian College of Higher Studies</h1>
         </div>
+        <p class="text-sm text-gray-500 mt-2">Student Management System</p>
+    </div>
+    
+    <!-- User Profile -->
+    <div class="p-4 border-b border-gray-200 flex items-center">
+        <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
+            <i class="fas fa-user text-blue-600"></i>
+        </div>
+        <div class="ml-3">
+            <h3 class="font-medium text-gray-800">John Smith</h3>
+            <p class="text-xs text-gray-500">Administrator</p>
+        </div>
+    </div>
+
+    <!-- Navigation Menu -->
+    <div class="py-4 flex-1 overflow-y-auto">
+
+        <a href="{{ route( 'dashboard') }}" class="sidebar-item active flex items-center py-3 px-6 text-gray-700">
+            <i class="fas fa-tachometer-alt w-5 mr-3"></i>
+            <span>Dashboard</span>
+        </a>
+        
+        <a href="{{ route('students.index') }}" class="sidebar-item flex items-center py-3 px-6 text-gray-700">
+            <i class="fas fa-user-graduate w-5 mr-3"></i>
+            <span>Students</span>
+            <span class="ml-auto bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full">42</span>
+        </a>
+        
+        <a href="{{ route('teachers.index') }}" class="sidebar-item flex items-center py-3 px-6 text-gray-700">
+            <i class="fas fa-chalkboard-teacher w-5 mr-3"></i>
+            <span>Teachers</span>
+            <span class="ml-auto bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full">12</span>
+        </a>
+        
+        <a href="#" class="sidebar-item flex items-center py-3 px-6 text-gray-700">
+            <i class="fas fa-book w-5 mr-3"></i>
+            <span>Courses</span>
+        </a>
+        
+        <a href="#" class="sidebar-item flex items-center py-3 px-6 text-gray-700">
+            <i class="fas fa-calendar-alt w-5 mr-3"></i>
+            <span>Subjects</span>
+        </a>
+        
+        <a href="#" class="sidebar-item flex items-center py-3 px-6 text-gray-700">
+            <i class = "fas fa-chart-bar w-5 mr-3"></i>
+            <span>Exams</span>
+        </a>
+        
+        <a href="#" class="sidebar-item flex items-center py-3 px-6 text-gray-700">
+            <i class="fas fa-file w-5 mr-3"></i>
+            <span>Results</span>
+        </a>
+        
+        <a href="#" class="sidebar-item flex items-center py-3 px-6 text-gray-700">
+            <i class="fas fa-cog w-5 mr-3"></i>
+            <span>Enrollments</span>
+        </a>
+
+    </div>
+
+    <!-- Logout Button (correct bottom position) -->
+    <div class="p-4 border-t border-gray-200">
+        <a href="/logout" class="flex items-center py-2 px-4 text-red-600 rounded-lg hover:bg-red-50 transition">
+            <i class="fas fa-sign-out-alt w-5 mr-3"></i>
+            <span>Logout</span>
+        </a>
+    </div>
+
+</div>
+
         
         <!-- Main Content -->
         <div class="flex-1 overflow-auto">
