@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\CourseController;
 use App\Http\Controllers\Dashboard;
 use App\Http\Controllers\StudentController;
 use App\Http\Controllers\TeacherController;
@@ -12,5 +13,6 @@ Route::get('', [Dashboard::class,'index'])->name('dashboard');
 Route::get('/logout', [AuthController::class,'Logout'])->name('logout');
 Route::resource('students', StudentController::class);
 Route::resource('teachers', TeacherController::class);
+Route::resource('courses', CourseController::class);
 
 

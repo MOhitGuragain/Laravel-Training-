@@ -108,7 +108,7 @@
             <span class="ml-auto bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full">12</span>
         </a>
         
-        <a href="#" class="sidebar-item flex items-center py-3 px-6 text-gray-700">
+        <a href="{{ route('courses.index') }}" class="sidebar-item flex items-center py-3 px-6 text-gray-700">
             <i class="fas fa-book w-5 mr-3"></i>
             <span>Courses</span>
         </a>
