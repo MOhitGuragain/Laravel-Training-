@@ -2,25 +2,26 @@
 @section('content')
       <!-- Stats Cards -->
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
-                    <div class="stat-card text-white rounded-xl p-6 shadow-lg">
-                        <div class="flex justify-between items-start">
-                            <div>
-                                <p class="text-blue-100">Total Students</p>
-                                <h3 class="text-3xl font-bold mt-2">1,248</h3>
-                            </div>
-                            <div class="bg-white bg-opacity-20 p-3 rounded-lg">
-                                <i class="fas fa-user-graduate text-xl"></i>
-                            </div>
-                        </div>
-                        <div class="mt-4 flex items-center">
-                            <span class="text-green-300 text-sm flex items-center">
-                                <i class="fas fa-arrow-up mr-1"></i> 5.2%
-                            </span>
-                            <span class="text-blue-100 text-sm ml-2">Since last month</span>
-                        </div>
-                    </div>
-                    
-                    <div class="bg-white rounded-xl p-6 shadow-sm card">
+                    <a href="{{ route('students.index') }}" class="stat-card text-white rounded-xl p-6 shadow-lg block">
+    <div class="flex justify-between items-start">
+        <div>
+            <p class="text-blue-100">Total Students</p>
+            <h3 class="text-3xl font-bold mt-2">1,248</h3>
+        </div>
+        <div class="bg-white bg-opacity-20 p-3 rounded-lg">
+            <i class="fas fa-user-graduate text-xl"></i>
+        </div>
+    </div>
+
+    <div class="mt-4 flex items-center">
+        <span class="text-green-300 text-sm flex items-center">
+            <i class="fas fa-arrow-up mr-1"></i> 5.2%
+        </span>
+        <span class="text-blue-100 text-sm ml-2">Since last month</span>
+    </div>
+</a>
+    
+                    <a href ="{{ route('teachers.index') }}" class="bg-white rounded-xl p-6 shadow-sm card">
                         <div class="flex justify-between items-start">
                             <div>
                                 <p class="text-gray-500">Total Teachers</p>
@@ -36,9 +37,9 @@
                             </span>
                             <span class="text-gray-500 text-sm ml-2">Since last month</span>
                         </div>
-                    </div>
+                    </a>
                     
-                    <div class="bg-white rounded-xl p-6 shadow-sm card">
+                    <a href="{{ route('courses.index') }}" class="bg-white rounded-xl p-6 shadow-sm card">
                         <div class="flex justify-between items-start">
                             <div>
                                 <p class="text-gray-500">Courses</p>
@@ -50,17 +51,16 @@
                         </div>
                         <div class="mt-4 flex items-center">
                             <span class="text-green-500 text-sm flex items-center">
-                                <i class="fas fa-plus mr-1"></i> 3 New
+                                <i class="fas fa-plus mr-1"></i> 1 New
                             </span>
-                            <span class="text-gray-500 text-sm ml-2">This semester</span>
                         </div>
-                    </div>
+                    </a>
                     
-                    <div class="bg-white rounded-xl p-6 shadow-sm card">
+                    <a href="{{ route('subjects.index') }}" class="bg-white rounded-xl p-6 shadow-sm card">
                         <div class="flex justify-between items-start">
                             <div>
-                                <p class="text-gray-500">Attendance</p>
-                                <h3 class="text-3xl font-bold text-gray-800 mt-2">94%</h3>
+                                <p class="text-gray-500">Subjects</p>
+                                <h3 class="text-3xl font-bold text-gray-800 mt-2">5</h3>
                             </div>
                             <div class="bg-purple-100 p-3 rounded-lg">
                                 <i class="fas fa-calendar-check text-purple-600 text-xl"></i>
@@ -68,11 +68,11 @@
                         </div>
                         <div class="mt-4 flex items-center">
                             <span class="text-green-500 text-sm flex items-center">
-                                <i class="fas fa-arrow-up mr-1"></i> 1.5%
+                                <i class="fas fa-arrow-up mr-1"></i> 1
                             </span>
-                            <span class="text-gray-500 text-sm ml-2">This week</span>
+                            <span class="text-gray-500 text-sm ml-2">This Semester</span>
                         </div>
-                    </div>
+                    </a>
                 </div>
                 
                 <!-- Charts and Recent Activity -->
