@@ -109,27 +109,27 @@
         </a>
         
         <a href="{{ route('courses.index') }}" class="sidebar-item flex items-center py-3 px-6 text-gray-700">
-            <i class="fas fa-book w-5 mr-3"></i>
+            <i class="fas fa-book-open w-5 mr-3"></i>
             <span>Courses</span>
         </a>
         
         <a href="{{ route('subjects.index') }}" class="sidebar-item flex items-center py-3 px-6 text-gray-700">
-            <i class="fas fa-calendar-alt w-5 mr-3"></i>
+            <i class="fas fa-book w-5 mr-3"></i>
             <span>Subjects</span>
         </a>
         
         <a href="{{ route('exams.index') }}" class="sidebar-item flex items-center py-3 px-6 text-gray-700">
-            <i class = "fas fa-chart-bar w-5 mr-3"></i>
+            <i class = "fas fa-clipboard w-5 mr-3"></i>
             <span>Exams</span>
         </a>
         
         <a href="{{ route('results.index') }}" class="sidebar-item flex items-center py-3 px-6 text-gray-700">
-            <i class="fas fa-file w-5 mr-3"></i>
+            <i class="fas fa-bar-chart w-5 mr-3"></i>
             <span>Results</span>
         </a>
         
         <a href="{{ route('enrollments.index') }}" class="sidebar-item flex items-center py-3 px-6 text-gray-700">
-            <i class="fas fa-cog w-5 mr-3"></i>
+            <i class="fas fa-user-graduate w-5 mr-3"></i>
             <span>Enrollments</span>
         </a>
 
